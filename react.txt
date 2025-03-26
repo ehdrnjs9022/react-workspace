@@ -1,1 +1,4 @@
-JSX는 React에서 사용하는 JavaScript 내에서 HTML처럼 보이는 문법을 의미해.
+- 서버 터미널
+npm v- 버전확인(노드깔려있는지확인가능)
+npm install (터미널 리셋됐을경우 다시 설치)
+npm run dev ( 서버실행)

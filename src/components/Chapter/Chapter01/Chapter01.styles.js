@@ -15,6 +15,5 @@ export const StyledP = styled.p`
 `;
 
 export const StyledBlueP = styled.p`
-    background-color : skyblue;
 
 `;
