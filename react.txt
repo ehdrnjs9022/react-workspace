@@ -1,0 +1,1 @@
+JSX는 React에서 사용하는 JavaScript 내에서 HTML처럼 보이는 문법을 의미해.
