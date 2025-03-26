@@ -6,19 +6,22 @@ const StyledDiv = styled.div`
 
     width:400px;
     height:140px;
-    boder-box: 1px solid black;
+    boder: 1px solid black;
     display :inline-block;
     margin: auto;
+    background-color : ${(props) => (props.color ? props.color : "white")};
 `;
 
 const MemberInfo = (props) => {
-    console.log(props);
+    //console.log(props);
+    const {memberId,memberName,email,color} = props.member;
+    
     return(
     <>
-        <StyledDiv>
-            <h4>아이디 : </h4>
-            <strong>이름 : </strong>
-            <p>이메일 : </p>
+        <StyledDiv color={color}>
+            <h4>아이디 :{memberId} </h4>
+            <strong>이름 : {memberName}</strong>
+            <p>이메일 :{email} </p>
 
         </StyledDiv>
 
@@ -27,17 +30,18 @@ const MemberInfo = (props) => {
     )
 }
 
-
 const Chapter02 = () => {
     const response = [{
         memberId : "admin",
         memberName :"짱구",
         email: "jjang9@kh.com",
+        color :"lightblue",
     },
     {
         memberId : "user01",
         memberName :"철수",
         email: "abc@kh.com",
+        color :"lightblue",
     },
     {
         memberId : "user02",
@@ -50,7 +54,16 @@ const Chapter02 = () => {
 
     return(
         <>
-            <MemberInfo member={response[0]}/>
+            {response ? (
+                response.map((e, i) => 
+                <MemberInfo member={e} key={e.memberId}/>)
+            ) : (<div>조회결과가 존재하지 않습니다</div>)}
+          
+          
+        {/* 2절 
+            <MemberInfo {...response[0]}/>
+            <MemberInfo {...response[1]}/>
+            <MemberInfo {...response[2]}/> */}
            
 
 
