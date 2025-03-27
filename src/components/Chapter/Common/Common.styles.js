@@ -10,11 +10,10 @@ export const MainContent = styled.main`
 `;
 
 
-
-
 export const StyledHeader = styled.header`
     background: #4e91f9;
-  height: 80px;
+    font-size : 30px;
+  height: 150px;
   width : 100%;
   color: white;
   display: flex;
@@ -26,9 +25,6 @@ export const StyledHeader = styled.header`
 `;
 
 
-
-
-
 export const StyledFooter = styled.footer`
     background: #222;               
     height: 60px;                    
@@ -36,9 +32,9 @@ export const StyledFooter = styled.footer`
     display: flex;                   
     align-items: center;             
     justify-content: center;       
-    font-size: 14px;                
+    font-size: 30px;                
     width : 100%;
-
+    height: 150px;
 
 
 

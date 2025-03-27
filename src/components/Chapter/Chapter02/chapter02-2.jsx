@@ -9,7 +9,6 @@ const ChildComponent = (props) => {
 };
 
 const Chapter022 = () => {
-
     /* 
         주의할 점
         

@@ -1,4 +1,10 @@
 - 서버 터미널
+경로 설정 : cd 프로젝트명 (tap 자동완성)
 npm v- 버전확인(노드깔려있는지확인가능)
 npm install (터미널 리셋됐을경우 다시 설치)
 npm run dev ( 서버실행)
+컨트롤 C 서버중지
+
+라이브러리
+npm install react-router-dom  << 3/27
+npm install axios << 3/27
